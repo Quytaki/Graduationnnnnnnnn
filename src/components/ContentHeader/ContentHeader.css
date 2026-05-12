@@ -1,0 +1,174 @@
+/* ========================================
+   Content Header
+   ======================================== */
+
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4) var(--space-6);
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* ---- Left Section ---- */
+.content-header-left {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+}
+
+.page-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.record-count {
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
+    padding: 2px 8px;
+    background-color: var(--color-neutral-100);
+    border-radius: var(--radius-full);
+}
+
+/* ---- Right Section ---- */
+.content-header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+/* ---- Button Base ---- */
+.header-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.header-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* ---- Primary Button ---- */
+.header-btn-primary {
+    background-color: var(--color-primary);
+    color: var(--text-inverse);
+}
+
+.header-btn-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.header-btn-primary:focus-visible {
+    outline-offset: 2px;
+}
+
+/* ---- Filter Button ---- */
+.header-btn-filter {
+    background-color: var(--bg-surface);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.header-btn-filter:hover {
+    background-color: var(--color-neutral-100);
+    border-color: var(--border-color-dark);
+}
+
+.header-btn-filter.active {
+    background-color: var(--color-primary-bg);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+}
+
+.btn-label {
+    white-space: nowrap;
+}
+
+.btn-dropdown {
+    width: 14px;
+    height: 14px;
+    margin-left: var(--space-1);
+    opacity: 0.7;
+}
+
+/* ---- Filter Buttons Group ---- */
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+/* ---- View Toggle ---- */
+.view-toggle {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-100);
+    border-radius: var(--radius-md);
+    padding: 2px;
+}
+
+.view-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    color: var(--text-tertiary);
+    transition: all var(--transition-fast);
+}
+
+.view-btn:hover {
+    color: var(--text-secondary);
+}
+
+.view-btn.active {
+    background-color: var(--bg-surface);
+    color: var(--color-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.view-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+    .content-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-3);
+        padding: var(--space-3) var(--space-4);
+    }
+
+    .content-header-right {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .filter-buttons {
+        flex-wrap: wrap;
+    }
+
+    .btn-label {
+        display: none;
+    }
+}

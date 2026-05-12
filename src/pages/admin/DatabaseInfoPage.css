@@ -1,0 +1,31 @@
+.db-info-page { padding: 24px; }
+.db-info-page h1 { font-size: 22px; font-weight: 700; color: #1e293b; margin: 0 0 8px; }
+.db-info-subtitle { font-size: 13px; color: #94a3b8; margin-bottom: 24px; }
+
+.db-stats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin-bottom: 32px; }
+
+.db-stat-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; transition: all 0.2s; position: relative; overflow: hidden; }
+.db-stat-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); transform: translateY(-2px); border-color: #c7d2fe; }
+.db-stat-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; border-radius: 12px 12px 0 0; }
+.db-stat-card.purple::before { background: linear-gradient(90deg, #6366f1, #818cf8); }
+.db-stat-card.blue::before { background: linear-gradient(90deg, #2563eb, #60a5fa); }
+.db-stat-card.green::before { background: linear-gradient(90deg, #16a34a, #4ade80); }
+.db-stat-card.orange::before { background: linear-gradient(90deg, #ea580c, #fb923c); }
+.db-stat-card.pink::before { background: linear-gradient(90deg, #db2777, #f472b6); }
+.db-stat-card.teal::before { background: linear-gradient(90deg, #0d9488, #2dd4bf); }
+
+.db-stat-icon { font-size: 24px; margin-bottom: 8px; }
+.db-stat-label { font-size: 12px; color: #94a3b8; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+.db-stat-value { font-size: 28px; font-weight: 800; color: #1e293b; line-height: 1.2; }
+.db-stat-detail { font-size: 12px; color: #64748b; margin-top: 8px; display: flex; flex-direction: column; gap: 2px; }
+.db-stat-detail-row { display: flex; justify-content: space-between; }
+.db-stat-detail-row span:last-child { font-weight: 600; color: #475569; }
+
+.db-section-title { font-size: 16px; font-weight: 600; color: #1e293b; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; }
+.db-server-info { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px 20px; display: flex; gap: 24px; flex-wrap: wrap; }
+.db-server-item { display: flex; flex-direction: column; gap: 2px; }
+.db-server-item label { font-size: 11px; color: #94a3b8; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px; }
+.db-server-item span { font-size: 14px; color: #1e293b; font-weight: 500; }
+.db-loading { text-align: center; padding: 60px 20px; color: #94a3b8; }
+
+@media (max-width: 640px) { .db-stats-grid { grid-template-columns: 1fr 1fr; } }

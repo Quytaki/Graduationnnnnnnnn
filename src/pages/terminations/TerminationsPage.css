@@ -1,0 +1,66 @@
+.terminations-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Reason badges */
+.reason-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.reason-resignation {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.reason-dismissal {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.reason-layoff {
+    background: #ede9fe;
+    color: #5b21b6;
+}
+
+.reason-retirement {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.reason-endcontract {
+    background: #e0f2fe;
+    color: #0c4a6e;
+}
+
+.reason-mutual {
+    background: #f0f0f0;
+    color: #555;
+}
+
+/* Termination Status */
+.term-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.term-approved {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.term-completed {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.term-cancelled {
+    background: #e2e8f0;
+    color: #475569;
+}

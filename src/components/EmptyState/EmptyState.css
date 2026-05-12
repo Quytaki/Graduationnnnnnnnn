@@ -1,0 +1,111 @@
+/* ========================================
+   Empty State
+   AI-enhanced UX (Design-only)
+   ======================================== */
+
+.empty-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-16) var(--space-6);
+    background-color: var(--bg-surface);
+    min-height: 400px;
+}
+
+.empty-state-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+}
+
+/* ---- Illustration ---- */
+.empty-state-illustration {
+    margin-bottom: var(--space-6);
+}
+
+.empty-state-illustration svg {
+    width: 200px;
+    height: 160px;
+}
+
+/* ---- Text Content ---- */
+.empty-state-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+    margin: 0 0 var(--space-2) 0;
+}
+
+.empty-state-description {
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
+    line-height: var(--line-height-relaxed);
+    margin: 0 0 var(--space-4) 0;
+}
+
+/* ---- Hint Box ---- */
+.empty-state-hint {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    background-color: var(--color-info-light);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-6);
+    text-align: left;
+}
+
+.hint-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--color-info);
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.hint-text {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    line-height: var(--line-height-normal);
+}
+
+.hint-text strong {
+    font-weight: var(--font-weight-semibold);
+}
+
+/* ---- Action Button ---- */
+.empty-state-action {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-5);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-inverse);
+    background-color: var(--color-primary);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.empty-state-action:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.empty-state-action svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* ---- AI Enhanced Label ---- */
+.ai-enhanced-label {
+    display: inline-block;
+    margin-top: var(--space-8);
+    padding: 2px 8px;
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+    background-color: var(--color-neutral-100);
+    border-radius: var(--radius-full);
+}

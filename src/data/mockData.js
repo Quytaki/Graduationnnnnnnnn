@@ -1,0 +1,135 @@
+// Mock attendance data for UI demonstration
+// No API calls - purely frontend static data
+
+export const mockAttendanceData = [
+    {
+        id: 1,
+        company: 'TechCorp',
+        companyInitial: 'T',
+        employee: 'John Smith',
+        employeeInitial: 'JS',
+        department: 'Engineering',
+        avatarColor: '#714B67',
+        checkIn: '2026-01-27T08:02:00',
+        checkOut: '2026-01-27T17:15:00',
+        checkInStatus: 'ontime',
+        isCheckedIn: false
+    },
+    {
+        id: 2,
+        company: 'TechCorp',
+        companyInitial: 'T',
+        employee: 'Sarah Johnson',
+        employeeInitial: 'SJ',
+        department: 'Human Resources',
+        avatarColor: '#00A09D',
+        checkIn: '2026-01-27T08:45:00',
+        checkOut: null,
+        checkInStatus: 'late',
+        isCheckedIn: true
+    },
+    {
+        id: 3,
+        company: 'TechCorp',
+        companyInitial: 'T',
+        employee: 'Michael Chen',
+        employeeInitial: 'MC',
+        department: 'Engineering',
+        avatarColor: '#4A90A4',
+        checkIn: '2026-01-27T07:55:00',
+        checkOut: null,
+        checkInStatus: 'ontime',
+        isCheckedIn: true
+    },
+    {
+        id: 4,
+        company: 'DesignStudio',
+        companyInitial: 'D',
+        employee: 'Emily Davis',
+        employeeInitial: 'ED',
+        department: 'Design',
+        avatarColor: '#D97706',
+        checkIn: '2026-01-27T09:10:00',
+        checkOut: null,
+        checkInStatus: 'late',
+        isCheckedIn: true
+    },
+    {
+        id: 5,
+        company: 'TechCorp',
+        companyInitial: 'T',
+        employee: 'Robert Wilson',
+        employeeInitial: 'RW',
+        department: 'Sales',
+        avatarColor: '#059669',
+        checkIn: null,
+        checkOut: null,
+        checkInStatus: null,
+        isCheckedIn: false
+    },
+    {
+        id: 6,
+        company: 'DesignStudio',
+        companyInitial: 'D',
+        employee: 'Amanda Martinez',
+        employeeInitial: 'AM',
+        department: 'Marketing',
+        avatarColor: '#7C3AED',
+        checkIn: '2026-01-27T08:00:00',
+        checkOut: '2026-01-27T16:30:00',
+        checkInStatus: 'ontime',
+        isCheckedIn: false
+    },
+    {
+        id: 7,
+        company: 'TechCorp',
+        companyInitial: 'T',
+        employee: 'David Brown',
+        employeeInitial: 'DB',
+        department: 'Engineering',
+        avatarColor: '#DC2626',
+        checkIn: '2026-01-27T08:30:00',
+        checkOut: null,
+        checkInStatus: 'late',
+        isCheckedIn: true
+    },
+    {
+        id: 8,
+        company: 'DesignStudio',
+        companyInitial: 'D',
+        employee: 'Lisa Anderson',
+        employeeInitial: 'LA',
+        department: 'Design',
+        avatarColor: '#EC4899',
+        checkIn: '2026-01-27T07:45:00',
+        checkOut: null,
+        checkInStatus: 'ontime',
+        isCheckedIn: true
+    },
+    {
+        id: 9,
+        company: 'TechCorp',
+        companyInitial: 'T',
+        employee: 'James Taylor',
+        employeeInitial: 'JT',
+        department: 'Finance',
+        avatarColor: '#0891B2',
+        checkIn: null,
+        checkOut: null,
+        checkInStatus: null,
+        isCheckedIn: false
+    },
+    {
+        id: 10,
+        company: 'DesignStudio',
+        companyInitial: 'D',
+        employee: 'Jennifer White',
+        employeeInitial: 'JW',
+        department: 'Human Resources',
+        avatarColor: '#8B5CF6',
+        checkIn: '2026-01-27T08:05:00',
+        checkOut: null,
+        checkInStatus: 'ontime',
+        isCheckedIn: true
+    }
+];

@@ -1,0 +1,119 @@
+.contracts-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Type Badge */
+.type-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: #f0f0f0;
+    color: #555;
+    text-transform: capitalize;
+}
+
+/* Contract Status */
+.contract-status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-draft {
+    background: #e2e8f0;
+    color: #475569;
+}
+
+.status-running {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.status-expired {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.status-cancelled {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* Wide Modal */
+.modal-wide {
+    max-width: 640px;
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 20px;
+}
+
+/* Empty State */
+.empty-list-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color: #6c757d;
+    text-align: center;
+}
+
+.empty-list-state h3 {
+    margin: 0 0 8px;
+    font-size: 1.125rem;
+    color: #495057;
+}
+
+.empty-list-state p {
+    margin: 0 0 20px;
+    font-size: 0.875rem;
+}
+
+/* Approve / Revert Buttons */
+.approve-btn {
+    color: #059669 !important;
+    background: rgba(5, 150, 105, 0.08) !important;
+}
+.approve-btn:hover {
+    background: rgba(5, 150, 105, 0.18) !important;
+    color: #047857 !important;
+}
+
+.revert-btn {
+    color: #d97706 !important;
+    background: rgba(217, 119, 6, 0.08) !important;
+}
+.revert-btn:hover {
+    background: rgba(217, 119, 6, 0.18) !important;
+    color: #b45309 !important;
+}
+
+/* Workflow Notice */
+.workflow-notice {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: #1e40af;
+}
+.workflow-notice svg {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    color: #3b82f6;
+}

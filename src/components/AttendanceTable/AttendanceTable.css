@@ -1,0 +1,233 @@
+/* ========================================
+   Attendance Table
+   ======================================== */
+
+.attendance-table-wrapper {
+    flex: 1;
+    overflow: auto;
+    background-color: var(--bg-surface);
+}
+
+.attendance-table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+/* ---- Table Header ---- */
+.table-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--color-neutral-50);
+}
+
+.table-header th {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    white-space: nowrap;
+}
+
+.table-header-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.sort-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    color: var(--text-muted);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    opacity: 0;
+    transition: all var(--transition-fast);
+}
+
+.sort-button svg {
+    width: 14px;
+    height: 14px;
+}
+
+th:hover .sort-button {
+    opacity: 1;
+}
+
+.sort-button:hover {
+    background-color: var(--color-neutral-200);
+    color: var(--text-secondary);
+}
+
+/* ---- Table Body ---- */
+.table-body tr {
+    transition: background-color var(--transition-fast);
+}
+
+.table-row-even {
+    background-color: var(--bg-surface);
+}
+
+.table-row-odd {
+    background-color: var(--color-neutral-50);
+}
+
+.table-body tr:hover {
+    background-color: var(--color-neutral-100);
+}
+
+.table-cell {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--border-color-light);
+    vertical-align: middle;
+}
+
+/* ---- Checkbox Column ---- */
+.table-cell-checkbox {
+    width: 48px;
+    text-align: center;
+}
+
+.table-cell-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: var(--color-primary);
+}
+
+/* ---- Company Column ---- */
+.table-cell-company {
+    min-width: 160px;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.company-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-md);
+    background-color: var(--color-neutral-200);
+    color: var(--text-secondary);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-name {
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+}
+
+/* ---- Employee Column ---- */
+.table-cell-employee {
+    min-width: 200px;
+}
+
+.employee-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.employee-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-full);
+    background-color: var(--color-primary);
+    color: var(--text-inverse);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.employee-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.employee-name {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary);
+}
+
+.employee-department {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+}
+
+/* ---- DateTime Columns ---- */
+.table-cell-checkin,
+.table-cell-checkout {
+    min-width: 180px;
+}
+
+.datetime-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.datetime-value {
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+    font-variant-numeric: tabular-nums;
+}
+
+.datetime-status {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    padding: 1px 6px;
+    border-radius: var(--radius-full);
+    width: fit-content;
+}
+
+.datetime-status.late {
+    background-color: var(--color-danger-light);
+    color: var(--color-danger-dark);
+}
+
+.datetime-status.ontime {
+    background-color: var(--color-success-light);
+    color: var(--color-success-dark);
+}
+
+.datetime-empty {
+    color: var(--text-muted);
+    font-size: var(--font-size-sm);
+}
+
+/* ---- Action Column ---- */
+.table-cell-action {
+    width: 120px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+    .attendance-table {
+        min-width: 700px;
+    }
+
+    .employee-department {
+        display: none;
+    }
+}

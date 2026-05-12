@@ -1,0 +1,221 @@
+.employee-list-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* ── Filter Bar ─────────────────────────────────────────── */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    flex-wrap: wrap;
+}
+
+.search-form {
+    display: flex;
+    gap: 8px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.filter-input {
+    flex: 1;
+    padding: 7px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.filter-input:focus {
+    border-color: #714B67;
+    box-shadow: 0 0 0 2px rgba(113, 75, 103, 0.15);
+}
+
+.filter-search-btn {
+    padding: 7px 16px;
+    background: #714B67;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.filter-search-btn:hover {
+    background: #5d3d56;
+}
+
+.filter-select {
+    padding: 7px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    background: white;
+    cursor: pointer;
+    outline: none;
+    min-width: 160px;
+}
+
+.filter-select:focus {
+    border-color: #714B67;
+}
+
+.filter-clear {
+    padding: 7px 14px;
+    background: none;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    color: #6c757d;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-clear:hover {
+    background: #f1f3f5;
+    color: #495057;
+}
+
+/* ── Status Badge ───────────────────────────────────────── */
+.status-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-badge.active {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.status-badge.archived {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* ── Role Tags ─────────────────────────────────────────── */
+.role-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.role-tag.role-director {
+    background: #fde8e8;
+    color: #c0392b;
+}
+
+.role-tag.role-department_head {
+    background: #f0e4ed;
+    color: #714B67;
+}
+
+.role-tag.role-team_lead {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.role-tag.role-senior {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.role-tag.role-staff {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+/* ── Action Buttons ─────────────────────────────────────── */
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: transparent;
+}
+
+.action-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.edit-btn {
+    color: #714B67;
+}
+
+.edit-btn:hover {
+    background: rgba(113, 75, 103, 0.1);
+}
+
+.delete-btn {
+    color: #dc2626;
+}
+
+.delete-btn:hover {
+    background: rgba(220, 38, 38, 0.1);
+}
+
+/* ── Loading/Empty State ────────────────────────────────── */
+.loading-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color: #6c757d;
+    font-size: 1rem;
+}
+
+.empty-list-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color: #6c757d;
+    text-align: center;
+}
+
+.empty-list-state svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+    opacity: 0.5;
+}
+
+.empty-list-state h3 {
+    margin: 0 0 8px;
+    font-size: 1.125rem;
+    color: #495057;
+}
+
+.empty-list-state p {
+    margin: 0 0 20px;
+    font-size: 0.875rem;
+}
+
+.table-row.selected {
+    background-color: rgba(113, 75, 103, 0.06) !important;
+}
+
+.table-row:hover {
+    background-color: rgba(113, 75, 103, 0.04) !important;
+}

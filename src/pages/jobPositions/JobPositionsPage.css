@@ -1,0 +1,13 @@
+.job-positions-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.loading-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    color: #6c757d;
+}

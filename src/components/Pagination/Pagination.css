@@ -1,0 +1,134 @@
+/* ========================================
+   Pagination
+   ======================================== */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-3) var(--space-6);
+    background-color: var(--bg-surface);
+    border-top: 1px solid var(--border-color);
+}
+
+/* ---- Info Section ---- */
+.pagination-info {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-showing {
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
+}
+
+.pagination-showing strong {
+    font-weight: var(--font-weight-medium);
+    color: var(--text-secondary);
+}
+
+/* ---- Controls Section ---- */
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+}
+
+/* ---- Page Size ---- */
+.pagination-size {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.size-label {
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
+}
+
+.size-select {
+    padding: var(--space-1) var(--space-2);
+    padding-right: var(--space-6);
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%236b7280'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 6px center;
+    background-size: 16px;
+}
+
+.size-select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-bg);
+}
+
+/* ---- Page Navigator ---- */
+.pagination-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.pagination-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background-color: var(--color-neutral-100);
+    border-color: var(--border-color-dark);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pagination-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.pagination-current {
+    padding: 0 var(--space-3);
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
+}
+
+.pagination-current strong {
+    font-weight: var(--font-weight-medium);
+    color: var(--text-secondary);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+    .pagination {
+        flex-direction: column;
+        gap: var(--space-3);
+        padding: var(--space-3) var(--space-4);
+    }
+
+    .pagination-controls {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .pagination-size {
+        display: none;
+    }
+}

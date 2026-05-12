@@ -1,0 +1,96 @@
+.incentive-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Formula Card */
+.formula-card {
+    background: linear-gradient(135deg, #f8f7ff 0%, #f0eeff 100%);
+    border: 1px solid #e0dbf5;
+    border-radius: 10px;
+    padding: 18px 24px;
+    margin-bottom: 18px;
+}
+
+.formula-card h3 {
+    margin: 0 0 14px;
+    font-size: 0.95rem;
+    color: #5b21b6;
+}
+
+.formula-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 10px;
+}
+
+.formula-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    padding: 8px 14px;
+    flex: 1 1 260px;
+    min-width: 220px;
+    border: 1px solid #e5e7eb;
+}
+
+.formula-label {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #374151;
+}
+
+.formula-desc {
+    font-size: 0.78rem;
+    color: #6b7280;
+}
+
+.formula-op {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #7c3aed;
+    padding: 0 4px;
+    flex-shrink: 0;
+}
+
+.formula-total {
+    border-color: #7c3aed;
+    background: #f5f3ff;
+}
+
+.formula-total .formula-label {
+    color: #7c3aed;
+}
+
+.formula-net {
+    border-color: #059669;
+    background: #ecfdf5;
+}
+
+.formula-net .formula-label {
+    color: #059669;
+}
+
+/* Code Badge */
+.code-badge {
+    background: #f1f5f9;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.78rem;
+    color: #475569;
+}
+
+.cell-sub {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-top: 2px;
+}
+
+.value-highlight {
+    color: #059669;
+    font-size: 0.9rem;
+}

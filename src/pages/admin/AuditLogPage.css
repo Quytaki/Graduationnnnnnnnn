@@ -1,0 +1,34 @@
+.audit-log-page { padding: 24px; }
+.audit-log-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.audit-log-header h1 { font-size: 22px; font-weight: 700; color: #1e293b; margin: 0; }
+.audit-log-count { font-size: 13px; color: #64748b; background: #f1f5f9; padding: 4px 12px; border-radius: 20px; }
+
+.audit-log-timeline { display: flex; flex-direction: column; gap: 2px; }
+
+.audit-log-item { display: flex; gap: 16px; padding: 16px 20px; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; transition: all 0.15s; }
+.audit-log-item:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-color: #c7d2fe; }
+
+.audit-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.audit-icon.employee { background: #ede9fe; color: #7c3aed; }
+.audit-icon.contract { background: #dbeafe; color: #2563eb; }
+.audit-icon.leave { background: #dcfce7; color: #16a34a; }
+.audit-icon.termination { background: #fee2e2; color: #dc2626; }
+.audit-icon.user { background: #e0e7ff; color: #4f46e5; }
+
+.audit-content { flex: 1; min-width: 0; }
+.audit-description { font-size: 14px; color: #1e293b; font-weight: 500; margin-bottom: 4px; }
+.audit-meta { display: flex; gap: 12px; align-items: center; }
+.audit-type-badge { font-size: 11px; padding: 2px 8px; border-radius: 6px; font-weight: 600; text-transform: uppercase; }
+.audit-type-badge.employee { background: #ede9fe; color: #7c3aed; }
+.audit-type-badge.contract { background: #dbeafe; color: #2563eb; }
+.audit-type-badge.leave { background: #dcfce7; color: #16a34a; }
+.audit-type-badge.termination { background: #fee2e2; color: #dc2626; }
+.audit-type-badge.user { background: #e0e7ff; color: #4f46e5; }
+.audit-time { font-size: 12px; color: #94a3b8; }
+
+.audit-loading, .audit-empty { text-align: center; padding: 60px 20px; color: #94a3b8; font-size: 15px; }
+.audit-pagination { display: flex; justify-content: center; gap: 8px; margin-top: 24px; }
+.audit-pagination button { padding: 8px 16px; border: 1px solid #e2e8f0; background: #fff; border-radius: 8px; cursor: pointer; font-size: 13px; color: #475569; transition: all 0.15s; }
+.audit-pagination button:hover:not(:disabled) { background: #f1f5f9; border-color: #6366f1; color: #6366f1; }
+.audit-pagination button:disabled { opacity: 0.4; cursor: not-allowed; }
+.audit-pagination span { padding: 8px 12px; font-size: 13px; color: #64748b; }

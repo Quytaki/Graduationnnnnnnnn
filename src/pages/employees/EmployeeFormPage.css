@@ -1,0 +1,227 @@
+.form-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* ── Form Header ────────────────────────────────────────── */
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid #e9ecef;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.form-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.form-header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background: white;
+    color: #495057;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.back-btn:hover {
+    background: #f8f9fa;
+    border-color: #adb5bd;
+}
+
+.back-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.header-btn-secondary {
+    padding: 8px 20px;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    color: #495057;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.header-btn-secondary:hover {
+    background: #f8f9fa;
+    border-color: #adb5bd;
+}
+
+/* ── Error ──────────────────────────────────────────────── */
+.form-error {
+    margin: 12px 24px;
+    padding: 10px 16px;
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    color: #991b1b;
+    font-size: 0.875rem;
+}
+
+/* ── Employee Card Header ───────────────────────────────── */
+.employee-card-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 24px 0;
+    margin: 0 24px;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 24px;
+}
+
+.employee-avatar-large {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.employee-card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.employee-name-input {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 4px 0;
+    color: #212529;
+    outline: none;
+    transition: border-color 0.2s;
+    background: transparent;
+}
+
+.employee-name-input:focus {
+    border-bottom-color: #714B67;
+}
+
+.employee-name-input::placeholder {
+    color: #adb5bd;
+}
+
+.employee-title-input {
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 4px 0;
+    color: #6c757d;
+    outline: none;
+    transition: border-color 0.2s;
+    background: transparent;
+}
+
+.employee-title-input:focus {
+    border-bottom-color: #714B67;
+}
+
+.status-toggle {
+    flex-shrink: 0;
+}
+
+.status-select {
+    padding: 6px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    background: #d1fae5;
+    color: #065f46;
+}
+
+/* ── Form Body ──────────────────────────────────────────── */
+.form-body {
+    padding: 24px 48px;
+    flex: 1;
+}
+
+.form-section {
+    margin-bottom: 32px;
+}
+
+.form-section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #714B67;
+    margin: 0 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #714B67;
+    display: inline-block;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 32px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #495057;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.form-group input,
+.form-group select {
+    padding: 9px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    color: #212529;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #714B67;
+    box-shadow: 0 0 0 2px rgba(113, 75, 103, 0.15);
+}
+
+.form-group input::placeholder {
+    color: #adb5bd;
+}
